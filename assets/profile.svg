@@ -1,51 +1,55 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" font-family="Consolas, 'Courier New', monospace">
   <defs>
-    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse">
-      <rect width="8" height="8" fill="#ffffff" fill-opacity="0.03"/>
-      <rect x="8" y="8" width="8" height="8" fill="#ffffff" fill-opacity="0.03"/>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="1" height="1" fill="#d4af6a" fill-opacity="0.08"/>
     </pattern>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d4af6a" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#d4af6a" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#d4af6a" stop-opacity="0"/>
+    </linearGradient>
   </defs>
 
   <!-- Background -->
-  <rect width="1000" height="640" fill="#1a0f0c"/>
-  <rect width="1000" height="640" fill="url(#grid)"/>
+  <rect width="1000" height="640" fill="#06070a"/>
+  <rect width="1000" height="640" fill="url(#dots)"/>
 
   <!-- Twinkling pixels -->
-  <rect x="12" y="12" width="6" height="6" fill="#e8b869">
+  <rect x="22" y="22" width="5" height="5" fill="#d4af6a">
     <animate attributeName="opacity" values="0;0.9;0" dur="3s" repeatCount="indefinite"/>
   </rect>
-  <rect x="976" y="22" width="6" height="6" fill="#8c1d2c">
-    <animate attributeName="opacity" values="0;1;0" dur="4s" begin="1s" repeatCount="indefinite"/>
+  <rect x="972" y="26" width="5" height="5" fill="#7dd3c0">
+    <animate attributeName="opacity" values="0;0.9;0" dur="4s" begin="1s" repeatCount="indefinite"/>
   </rect>
-  <rect x="14" y="604" width="6" height="6" fill="#8c1d2c">
-    <animate attributeName="opacity" values="0;1;0" dur="5s" begin="2s" repeatCount="indefinite"/>
+  <rect x="22" y="612" width="5" height="5" fill="#7dd3c0">
+    <animate attributeName="opacity" values="0;0.9;0" dur="5s" begin="2s" repeatCount="indefinite"/>
   </rect>
-  <rect x="970" y="610" width="6" height="6" fill="#e8b869">
+  <rect x="968" y="606" width="5" height="5" fill="#d4af6a">
     <animate attributeName="opacity" values="0;0.9;0" dur="3.5s" begin="0.5s" repeatCount="indefinite"/>
   </rect>
-  <rect x="500" y="10" width="6" height="6" fill="#e8b869">
+  <rect x="498" y="12" width="5" height="5" fill="#d4af6a">
     <animate attributeName="opacity" values="0;0.7;0" dur="4.5s" begin="1.5s" repeatCount="indefinite"/>
   </rect>
-  <rect x="500" y="626" width="6" height="6" fill="#8c1d2c">
-    <animate attributeName="opacity" values="0;1;0" dur="3.8s" begin="2.5s" repeatCount="indefinite"/>
+  <rect x="498" y="624" width="5" height="5" fill="#7dd3c0">
+    <animate attributeName="opacity" values="0;0.7;0" dur="3.8s" begin="2.5s" repeatCount="indefinite"/>
   </rect>
 
   <!-- Window shadow and frame -->
-  <rect x="50" y="50" width="920" height="540" fill="#0d0605"/>
-  <rect x="40" y="40" width="920" height="540" fill="#24150f" stroke="#8c5a3c" stroke-width="4"/>
+  <rect x="52" y="56" width="920" height="540" fill="#000000" fill-opacity="0.6"/>
+  <rect x="40" y="40" width="920" height="540" fill="#0e1014" stroke="#2a2f38" stroke-width="2"/>
 
   <!-- Title bar -->
-  <rect x="44" y="44" width="912" height="40" fill="#5c1a24"/>
-  <rect x="60" y="56" width="12" height="12" fill="#e8b869"/>
-  <rect x="78" y="56" width="12" height="12" fill="#8c5a3c"/>
-  <rect x="96" y="56" width="12" height="12" fill="#f2e6d9"/>
-  <text x="500" y="70" text-anchor="middle" font-size="15" fill="#f2e6d9">kanishk.profile — README</text>
-  <rect x="44" y="84" width="912" height="4" fill="#8c5a3c"/>
+  <rect x="41" y="41" width="918" height="43" fill="#15181e"/>
+  <circle cx="62" cy="62" r="5" fill="#d4af6a"/>
+  <circle cx="80" cy="62" r="5" fill="#3a404b"/>
+  <circle cx="98" cy="62" r="5" fill="#3a404b"/>
+  <text x="500" y="68" text-anchor="middle" font-size="14" fill="#8a8f99">kanishk.profile — README</text>
+  <rect x="41" y="84" width="918" height="1" fill="#2a2f38"/>
 
   <!-- Line number gutter -->
-  <rect x="44" y="88" width="72" height="452" fill="#1f110c"/>
-  <rect x="116" y="88" width="3" height="452" fill="#3b241b"/>
-  <g font-size="16" fill="#6b4a3e" text-anchor="end">
+  <rect x="41" y="85" width="71" height="455" fill="#0b0c0f"/>
+  <rect x="112" y="85" width="1" height="455" fill="#2a2f38"/>
+  <g font-size="15" fill="#3a404b" text-anchor="end">
     <text x="96" y="130">1</text>
     <text x="96" y="160">2</text>
     <text x="96" y="190">3</text>
@@ -61,104 +65,113 @@
   </g>
 
   <!-- Active line highlight -->
-  <rect x="119" y="442" width="478" height="28" fill="#ffffff" fill-opacity="0.04"/>
+  <rect x="113" y="440" width="485" height="28" fill="#d4af6a" fill-opacity="0.06"/>
 
   <!-- Code, typed in line by line -->
   <g font-size="18">
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="0.3s" dur="0.1s" fill="freeze"/>
-      <text x="130" y="130"><tspan fill="#d9725f">const</tspan><tspan fill="#f2e6d9"> kanishk</tspan><tspan fill="#8c6a5a"> = {</tspan></text>
+      <text x="130" y="130"><tspan fill="#7dd3c0">const</tspan><tspan fill="#eceef2"> kanishk</tspan><tspan fill="#4b5260"> = {</tspan></text>
     </g>
     <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" begin="0.6s" dur="0.1s" fill="freeze"/>
-      <text x="152" y="160"><tspan fill="#e8c4a0">name</tspan><tspan fill="#8c6a5a">: </tspan><tspan fill="#e8b869">"Kanishk Nandeshwar"</tspan><tspan fill="#8c6a5a">,</tspan></text>
+      <animate attributeName="opacity" from="0" to="1" begin="0.7s" dur="0.1s" fill="freeze"/>
+      <text x="152" y="160"><tspan fill="#c9ced8">name</tspan><tspan fill="#4b5260">: </tspan><tspan fill="#d4af6a">"Kanishk Nandeshwar"</tspan><tspan fill="#4b5260">,</tspan></text>
     </g>
     <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" begin="0.9s" dur="0.1s" fill="freeze"/>
-      <text x="152" y="190"><tspan fill="#e8c4a0">degree</tspan><tspan fill="#8c6a5a">: </tspan><tspan fill="#e8b869">"B.Tech Data Science &amp; AI"</tspan><tspan fill="#8c6a5a">,</tspan></text>
+      <animate attributeName="opacity" from="0" to="1" begin="1.05s" dur="0.1s" fill="freeze"/>
+      <text x="152" y="190"><tspan fill="#c9ced8">degree</tspan><tspan fill="#4b5260">: </tspan><tspan fill="#d4af6a">"B.Tech Data Science &amp; AI"</tspan><tspan fill="#4b5260">,</tspan></text>
     </g>
     <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" begin="1.2s" dur="0.1s" fill="freeze"/>
-      <text x="152" y="220"><tspan fill="#e8c4a0">institute</tspan><tspan fill="#8c6a5a">: </tspan><tspan fill="#e8b869">"IIT Bhilai"</tspan><tspan fill="#8c6a5a">,</tspan></text>
+      <animate attributeName="opacity" from="0" to="1" begin="1.4s" dur="0.1s" fill="freeze"/>
+      <text x="152" y="220"><tspan fill="#c9ced8">institute</tspan><tspan fill="#4b5260">: </tspan><tspan fill="#d4af6a">"IIT Bhilai"</tspan><tspan fill="#4b5260">,</tspan></text>
     </g>
     <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" begin="1.5s" dur="0.1s" fill="freeze"/>
-      <text x="152" y="250"><tspan fill="#e8c4a0">focus</tspan><tspan fill="#8c6a5a">: [</tspan><tspan fill="#e8b869">"ML"</tspan><tspan fill="#8c6a5a">, </tspan><tspan fill="#e8b869">"NLP"</tspan><tspan fill="#8c6a5a">, </tspan><tspan fill="#e8b869">"C++"</tspan><tspan fill="#8c6a5a">],</tspan></text>
-    </g>
-    <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" begin="1.8s" dur="0.1s" fill="freeze"/>
-      <text x="152" y="280"><tspan fill="#e8c4a0">building</tspan><tspan fill="#8c6a5a">: </tspan><tspan fill="#e8b869">"LPG Shortage 2026"</tspan><tspan fill="#8c6a5a">,</tspan></text>
+      <animate attributeName="opacity" from="0" to="1" begin="1.75s" dur="0.1s" fill="freeze"/>
+      <text x="152" y="250"><tspan fill="#c9ced8">focus</tspan><tspan fill="#4b5260">: [</tspan><tspan fill="#d4af6a">"ML"</tspan><tspan fill="#4b5260">, </tspan><tspan fill="#d4af6a">"NLP"</tspan><tspan fill="#4b5260">, </tspan><tspan fill="#d4af6a">"C++"</tspan><tspan fill="#4b5260">],</tspan></text>
     </g>
     <g opacity="0">
       <animate attributeName="opacity" from="0" to="1" begin="2.1s" dur="0.1s" fill="freeze"/>
-      <text x="152" y="310"><tspan fill="#e8c4a0">contributing</tspan><tspan fill="#8c6a5a">: [</tspan><tspan fill="#e8b869">"DUET"</tspan><tspan fill="#8c6a5a">, </tspan><tspan fill="#e8b869">"Quoridor"</tspan><tspan fill="#8c6a5a">],</tspan></text>
+      <text x="152" y="280"><tspan fill="#c9ced8">building</tspan><tspan fill="#4b5260">: </tspan><tspan fill="#d4af6a">"LPG Shortage 2026"</tspan><tspan fill="#4b5260">,</tspan></text>
     </g>
     <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" begin="2.4s" dur="0.1s" fill="freeze"/>
-      <text x="152" y="340"><tspan fill="#e8c4a0">linkedin</tspan><tspan fill="#8c6a5a">: </tspan><tspan fill="#e8b869">"kanishk-nandeshwar"</tspan><tspan fill="#8c6a5a">,</tspan></text>
+      <animate attributeName="opacity" from="0" to="1" begin="2.45s" dur="0.1s" fill="freeze"/>
+      <text x="152" y="310"><tspan fill="#c9ced8">contributing</tspan><tspan fill="#4b5260">: [</tspan><tspan fill="#d4af6a">"DUET"</tspan><tspan fill="#4b5260">, </tspan><tspan fill="#d4af6a">"Quoridor"</tspan><tspan fill="#4b5260">],</tspan></text>
     </g>
     <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" begin="2.7s" dur="0.1s" fill="freeze"/>
-      <text x="130" y="370"><tspan fill="#8c6a5a">};</tspan></text>
+      <animate attributeName="opacity" from="0" to="1" begin="2.8s" dur="0.1s" fill="freeze"/>
+      <text x="152" y="340"><tspan fill="#c9ced8">linkedin</tspan><tspan fill="#4b5260">: </tspan><tspan fill="#d4af6a">"kanishk-nandeshwar"</tspan><tspan fill="#4b5260">,</tspan></text>
     </g>
     <g opacity="0">
-      <animate attributeName="opacity" from="0" to="1" begin="3.1s" dur="0.1s" fill="freeze"/>
-      <text x="130" y="430"><tspan fill="#6b4a3e">// open to internships &amp; collabs</tspan></text>
+      <animate attributeName="opacity" from="0" to="1" begin="3.15s" dur="0.1s" fill="freeze"/>
+      <text x="130" y="370"><tspan fill="#4b5260">};</tspan></text>
+    </g>
+    <g opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="3.5s" dur="0.1s" fill="freeze"/>
+      <text x="130" y="400"><tspan fill="#4b5260" font-style="italic">// open to internships &amp; collabs</tspan></text>
     </g>
   </g>
 
   <!-- Blinking cursor on line 12 -->
-  <rect x="130" y="442" width="11" height="22" fill="#e8b869">
+  <rect x="130" y="440" width="10" height="22" fill="#d4af6a">
     <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Status bar -->
-  <rect x="44" y="540" width="912" height="36" fill="#5c1a24"/>
-  <text x="60" y="563" font-size="13" fill="#f2e6d9">main  ·  UTF-8  ·  Ln 12, Col 1</text>
-  <text x="940" y="563" font-size="13" fill="#f2e6d9" text-anchor="end">B.Tech · IIT Bhilai</text>
-
   <!-- Right panel -->
-  <rect x="598" y="88" width="3" height="452" fill="#3b241b"/>
-  <rect x="601" y="88" width="351" height="452" fill="#2a1812"/>
+  <rect x="598" y="85" width="2" height="455" fill="#2a2f38"/>
+  <rect x="600" y="85" width="360" height="455" fill="#101318"/>
 
-  <text x="776" y="140" text-anchor="middle" font-size="13" fill="#8c6a5a" letter-spacing="2">STATUS</text>
-  <rect x="640" y="160" width="10" height="10" fill="#e8b869">
+  <text x="780" y="140" text-anchor="middle" font-size="12" fill="#6b7280" letter-spacing="3">STATUS</text>
+  <circle cx="640" cy="160" r="5" fill="#d4af6a">
     <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
-  </rect>
-  <text x="660" y="170" font-size="15" fill="#e8c4a0">open to collaborate</text>
+  </circle>
+  <text x="656" y="165" font-size="15" fill="#eceef2">open to collaborate</text>
+
+  <text x="640" y="215" font-size="12" fill="#6b7280" letter-spacing="3">CURRENTLY</text>
+  <text x="640" y="240" font-size="15" fill="#eceef2">▸ LPG Shortage 2026</text>
+  <text x="640" y="264" font-size="15" fill="#eceef2">▸ Dodge Game · MediaPipe</text>
 
   <!-- Pixel coffee mug -->
-  <g>
+  <g transform="translate(18 0)">
     <!-- Steam -->
-    <rect x="738" y="240" width="12" height="12" fill="#e8b869">
+    <rect x="738" y="240" width="12" height="12" fill="#d4af6a">
       <animate attributeName="y" values="240;176" dur="2.4s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0;0.9;0" dur="2.4s" repeatCount="indefinite"/>
     </rect>
-    <rect x="770" y="240" width="12" height="12" fill="#e8b869">
+    <rect x="770" y="240" width="12" height="12" fill="#d4af6a">
       <animate attributeName="y" values="240;176" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0;0.9;0" dur="2.4s" begin="0.8s" repeatCount="indefinite"/>
     </rect>
-    <rect x="802" y="240" width="12" height="12" fill="#e8b869">
+    <rect x="802" y="240" width="12" height="12" fill="#d4af6a">
       <animate attributeName="y" values="240;176" dur="2.4s" begin="1.6s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0;0.9;0" dur="2.4s" begin="1.6s" repeatCount="indefinite"/>
     </rect>
 
-    <!-- Coffee surface and body -->
-    <rect x="706" y="264" width="112" height="16" fill="#6b4226"/>
-    <rect x="706" y="280" width="112" height="96" fill="#8c1d2c"/>
-    <rect x="714" y="288" width="16" height="80" fill="#b03a48" fill-opacity="0.5"/>
-    <rect x="706" y="328" width="112" height="8" fill="#5c1a24"/>
-    <rect x="706" y="336" width="112" height="8" fill="#e8b869" fill-opacity="0.6"/>
+    <!-- Body -->
+    <rect x="706" y="264" width="112" height="16" fill="#8a7548"/>
+    <rect x="706" y="280" width="112" height="96" fill="#1b1f27" stroke="#2a2f38" stroke-width="2"/>
+    <rect x="714" y="288" width="16" height="80" fill="#d4af6a" fill-opacity="0.12"/>
+    <rect x="706" y="328" width="112" height="6" fill="#d4af6a"/>
 
     <!-- Handle -->
-    <rect x="818" y="296" width="16" height="16" fill="#8c1d2c"/>
-    <rect x="834" y="312" width="16" height="48" fill="#8c1d2c"/>
-    <rect x="818" y="360" width="16" height="16" fill="#8c1d2c"/>
+    <rect x="818" y="296" width="16" height="16" fill="#1b1f27" stroke="#2a2f38" stroke-width="2"/>
+    <rect x="834" y="312" width="16" height="48" fill="#1b1f27" stroke="#2a2f38" stroke-width="2"/>
+    <rect x="818" y="360" width="16" height="16" fill="#1b1f27" stroke="#2a2f38" stroke-width="2"/>
 
     <!-- Saucer -->
-    <rect x="680" y="392" width="164" height="16" fill="#6b4226"/>
-    <rect x="696" y="408" width="132" height="8" fill="#5c1a24"/>
+    <rect x="680" y="392" width="164" height="16" fill="#2a2f38"/>
+    <rect x="696" y="408" width="132" height="8" fill="#15181e"/>
   </g>
 
-  <text x="776" y="480" text-anchor="middle" font-size="14" fill="#8c6a5a">&gt; brewing new projects_</text>
+  <text x="780" y="480" text-anchor="middle" font-size="14" fill="#6b7280">&gt; brewing new projects_</text>
+
+  <!-- Status bar -->
+  <rect x="41" y="540" width="918" height="39" fill="#15181e"/>
+  <rect x="41" y="540" width="918" height="1" fill="#2a2f38"/>
+  <text x="60" y="564" font-size="13" fill="#d4af6a">main  ·  UTF-8  ·  Ln 12, Col 1</text>
+  <text x="940" y="564" font-size="13" fill="#6b7280" text-anchor="end">B.Tech · IIT Bhilai</text>
+
+  <!-- Gold sheen sweeping across the window -->
+  <rect x="-300" y="40" width="300" height="540" fill="url(#sheen)">
+    <animate attributeName="x" values="-300;1000" dur="6s" repeatCount="indefinite"/>
+  </rect>
 </svg>
