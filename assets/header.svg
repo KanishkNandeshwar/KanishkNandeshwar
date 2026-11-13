@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#000000"/>
+      <stop offset="1" stop-color="#1c1c1e"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#a1a1a6"/>
+    </linearGradient>
+    <radialGradient id="glowBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#0a84ff" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#0a84ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#bf5af2" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#bf5af2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="340" fill="url(#bg)"/>
+  <circle cx="160" cy="80" r="200" fill="url(#glowBlue)"/>
+  <circle cx="860" cy="280" r="220" fill="url(#glowPurple)"/>
+  <rect x="30" y="30" width="940" height="280" rx="44" fill="url(#glass)" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1.5"/>
+  <text x="500" y="158" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="70" font-weight="700" letter-spacing="-2.5" fill="url(#title)">Kanishk Nandeshwar</text>
+  <text x="500" y="206" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" fill="#86868b" letter-spacing="0.3">Data Science &amp; AI · IIT Bhilai</text>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="500" fill="#f5f5f7" text-anchor="middle">
+    <rect x="255" y="236" width="110" height="38" rx="19" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="310" y="261">Python</text>
+    <rect x="385" y="236" width="90" height="38" rx="19" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="430" y="261">C++</text>
+    <rect x="495" y="236" width="60" height="38" rx="19" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="525" y="261">C</text>
+    <rect x="575" y="236" width="70" height="38" rx="19" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="610" y="261">ML</text>
+    <rect x="665" y="236" width="80" height="38" rx="19" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.15"/>
+    <text x="705" y="261">NLP</text>
+  </g>
+</svg>
