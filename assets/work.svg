@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#000000"/>
+      <stop offset="1" stop-color="#1c1c1e"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="430" fill="url(#bg)"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif">
+
+    <rect x="40" y="30" width="440" height="170" rx="32" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5"/>
+    <text x="72" y="82" font-size="12" font-weight="600" letter-spacing="2" fill="#0a84ff">PROJECT</text>
+    <text x="72" y="128" font-size="28" font-weight="600" letter-spacing="-0.5" fill="#f5f5f7">LPG Shortage 2026</text>
+    <text x="72" y="162" font-size="16" fill="#86868b">Major project on the 2026 LPG shortage</text>
+
+    <rect x="520" y="30" width="440" height="170" rx="32" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5"/>
+    <text x="552" y="82" font-size="12" font-weight="600" letter-spacing="2" fill="#0a84ff">PROJECT</text>
+    <text x="552" y="128" font-size="28" font-weight="600" letter-spacing="-0.5" fill="#f5f5f7">Dodge Game</text>
+    <text x="552" y="162" font-size="16" fill="#86868b">A dodging game</text>
+
+    <rect x="40" y="230" width="440" height="170" rx="32" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5"/>
+    <text x="72" y="282" font-size="12" font-weight="600" letter-spacing="2" fill="#30d158">CONTRIBUTION</text>
+    <text x="72" y="328" font-size="28" font-weight="600" letter-spacing="-0.5" fill="#f5f5f7">DUET</text>
+    <text x="72" y="362" font-size="16" fill="#86868b">Data pipeline &amp; steering component</text>
+
+    <rect x="520" y="230" width="440" height="170" rx="32" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5"/>
+    <text x="552" y="282" font-size="12" font-weight="600" letter-spacing="2" fill="#30d158">CONTRIBUTION</text>
+    <text x="552" y="328" font-size="28" font-weight="600" letter-spacing="-0.5" fill="#f5f5f7">Quoridor</text>
+    <text x="552" y="362" font-size="16" fill="#86868b">Contributor to the board game</text>
+
+  </g>
+</svg>
