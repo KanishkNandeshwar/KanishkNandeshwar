@@ -1,10 +1,6 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" />
-
-<br><br>
-
-<img src="assets/work.svg" width="100%" />
+<img src="assets/profile.svg" width="100%" />
 
 <br><br>
 
