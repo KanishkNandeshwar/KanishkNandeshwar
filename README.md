@@ -8,6 +8,8 @@
 
 *Building at the intersection of data, AI, and playful interaction.*
 
+<img src="assets/project-motion.svg" width="100%" alt="Animated projects terminal status" />
+
 </div>
 
 ---
@@ -76,3 +78,5 @@ Contribution to **Quoridor**, the strategy board-game project. Exploring how tho
 <a href="https://www.linkedin.com/in/kanishk-nandeshwar-388803412/"><img src="https://img.shields.io/badge/LET'S_CONNECT-d4af6a?style=flat-square&logo=linkedin&logoColor=0b0c0f" /></a>
 
 </div>
+
+
